@@ -1,0 +1,266 @@
+:root{
+    --blue:#0dcaf0;
+    --black:#33374b;
+    --gray:#789395;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+
+.bluefonts{
+    color:var(--blue) !important;
+}
+
+.grayfonts{
+    color:var(--gray) !important;
+}
+
+.socialmargins{
+    margin-top: 7px;
+    color: var(--gray);
+}
+
+.links{
+    font-size: 19px;
+}
+
+.grayfonts.links:hover{
+    color:var(--blue);
+}
+
+.bluefonts.links:hover{
+    color:var(--gray);
+}
+
+hr{
+    margin: 0;
+}
+
+
+/* Start Carousel Section */
+.homeslides{
+    width: 100%;
+    height: 70vh;
+    padding-top: 100px;
+}
+
+.slideimg1{
+    background:linear-gradient(#151d3b88 0%,#151d3b88), url('Images/Slider\ 1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slideimg2{
+    background:linear-gradient(#151d3b88 0%,#151d3b88), url('Images/Slider\ 2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.slideimg3{
+    background:linear-gradient(#151d3b88 0%,#151d3b88), url('Images/Slider\ 3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel .carousel-indicators button {
+    background-color: #fff;
+}
+
+.carousel .carousel-indicators button.active {
+    background-color: var(--blue);
+}
+
+.carousel-control-prev-icon , .carousel-control-next-icon{
+    background-color: var(--blue);
+    background-size: 50%;
+    border-radius: 50%;
+}
+
+/* End Carousel Section */
+
+/* Start About Us Section */
+#aboutus{
+    padding: 5rem 0px;
+}
+
+.aboutimgs{
+    transform: skewX(-3deg);
+    border-radius: 10px;
+    transition: all 0.4s;
+}
+
+.aboutimgs:hover{
+    transform: translate(5px, -5px) skewX(0deg);
+}
+/* End About Us Section */
+
+/* Start Service Section */
+#serviceSection{
+    background: #f2f4fe;
+    padding: 5rem 0px;
+    padding-bottom: 0rem;
+}
+
+.serviceicons{
+    width: 210px;
+    height: 100px;
+    color:#5463FF;
+    margin:0px 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* End Service Section */
+
+/* Start Portfolio Section */
+.portfolioimgs{
+    width: 350px;
+    height: 260px;
+    border-radius: 10px;
+    margin:10px;
+    background: url(./Images/portfolio/work-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.4s;
+}
+
+.portfolioimgs:hover{
+    transform: scale(1.1);
+}
+
+.portfolioimgs:nth-of-type(2){
+    background: url(./Images/portfolio/work-2.jpg);
+    background-size: contain;
+}
+
+.portfolioimgs:nth-of-type(3){
+    background: url(./Images/portfolio/work-3.jpg);
+    background-size: contain;
+}
+
+.portfolioimgs:nth-of-type(4){
+    background: url(./Images/portfolio/work-4.jpg);
+    background-size: contain;
+}
+
+.portfolioimgs:nth-of-type(5){
+    background: url(./Images/portfolio/work-5.jpg);
+    background-size: contain;
+}
+
+.portfolioimgs:nth-of-type(6){
+    background: url(./Images/portfolio/work-6.jpg);
+    background-size: contain;
+}
+
+.portfolioimgs:nth-of-type(7){
+    background: url(./Images/portfolio/work-7.jpg);
+    background-size: contain;
+}
+
+.portfolioimgs:nth-of-type(8){
+    background: url(./Images/portfolio/work-8.jpg);
+    background-size: contain;
+}
+
+.portfolioimgs:nth-of-type(9){
+    background: url(./Images/portfolio/work-9.jpg);
+    background-size: contain;
+}
+/* End Portfolio Section */
+
+/* Start Client Section */
+#clientSection{
+    background: #f2f4fe;
+}
+/* End Client Section */
+
+/* Start Footer Section */
+footer{
+    background: var(--black);
+}
+
+.footertexts{
+    color:rgba(255, 255, 255, 0.7);
+}
+
+.footericons{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #484b5d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footericons:hover{
+    transform: scale(1.05);
+    color: var(--blue);
+}
+
+.footerups{
+    position: fixed;
+    right:2rem;
+    bottom:2rem;
+}
+/* End Footer Section */
+
+/* Start Current Page Section */
+.currentPages{
+    width: 100vw;
+    height: 60vh;
+    background:url(./Images/Slider\ 3.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px -220px;
+    background-size: cover;
+
+    position: relative;
+}
+
+@media (max-width:745px) {
+    .currentPages{
+        background-position: 0px 0px;
+    }
+}
+
+.currentPages::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#525979a6 0%,#505a86a6);
+
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 1;
+}
+
+.currentTexts{
+    position: absolute;
+    top:50%;
+    left:50%;
+
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+/* End Current Page Section */
+
+/* Start Contact Section */
+#contactSection .form-control{
+    background-color: #454e792f;
+}
+/* End Contact Section */
+
+/* Vue Router */
+header a.router-link-active{
+    color:var(--blue) !important;
+}
